@@ -23,14 +23,14 @@ function randArray(amount){
     let arr = [];
     for(let i = 0; i < amount; i++){
         arr.push(Math.floor(Math.random() * (500 - 1) + 1));
-    }
+    };
     return arr;
 };
 
 // Practical task 4
 function raiseToDegree(a, b) {
     if(Number.isInteger(a) && Number.isInteger(b)) return a ** b;
-}
+};
 
 let a = Number(prompt('Please, enter the INT Number'));
 let b = Number(prompt('Please, enter the INT Number'));
@@ -73,7 +73,7 @@ function convertFirstLetter(string) {
         arrayFromWord[0] = arrayFromWord[0].toUpperCase();
         word = arrayFromWord.join('');
         arrayFromString[index++] = word;
-    }
+    };
     return arrayFromString.join(' ');
 }
 
