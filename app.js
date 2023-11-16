@@ -57,4 +57,23 @@ function findUnique(array) {
         if(array.includes(element)) return false;
     }; return true;
 }
-console.log(findUnique([2, 3, 5, 5]))
+
+// Practical task 7
+function lastElement(arr, number = 1) {
+    let reversedArray = arr.reverse();
+    return reversedArray[number - 1];
+};
+
+// Practical task 8
+function convertFirstLetter(string) {
+    let arrayFromString = string.split(' ');
+    index = 0;
+    for(let word of arrayFromString) {
+        let arrayFromWord = word.split('');
+        arrayFromWord[0] = arrayFromWord[0].toUpperCase();
+        word = arrayFromWord.join('');
+        arrayFromString[index++] = word;
+    }
+    return arrayFromString.join(' ');
+}
+
