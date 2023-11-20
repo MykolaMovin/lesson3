@@ -60,8 +60,7 @@ function findUnique(array) {
 
 // Practical task 7
 function lastElement(arr, number = 1) {
-    let reversedArray = arr.reverse();
-    return reversedArray[number - 1];
+    return arr.slice(arr.length - number, arr.length);
 };
 
 // Practical task 8
